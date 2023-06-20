@@ -1,0 +1,33 @@
+// unsplash__wrap
+.unsplash__wrap {}
+.unsplash__inner {
+    height: 600px;
+    h3 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    a {
+        @include button(#ecaa52, #e7f1ee);
+        border-radius: 30px;
+    }
+    .unsplash__item {
+        position: absolute;
+        margin-top: 70px;
+        @include flex--between;
+    
+        > div {
+            width: 400px;
+            margin-right: 20px;
+
+            img {
+                width: 100%
+                
+            }
+            
+        }
+    }
+}
